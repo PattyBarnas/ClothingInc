@@ -1,0 +1,28 @@
+{
+  "clothes": [
+    {
+      "id": 1,
+      "name": "Nike Long sleeve shirt",
+      "description": "Size Large 100% cotton",
+      "price": 29.99
+    },
+    {
+      "id": 2,
+      "name": "Calvin klein Jeans",
+      "description": "Size: 32x32 made from polyester",
+      "price": 59.99
+    },
+    {
+      "id": 3,
+      "name": "Nike SB shoes",
+      "description": "Size 10.5, Ishod Wair model",
+      "price": 89.99
+    },
+    {
+      "id": 4,
+      "name": "Nike Hoodie",
+      "description": "Size Large, made with 50% polyester and 50% twill",
+      "price": 39.99
+    }
+  ]
+}
