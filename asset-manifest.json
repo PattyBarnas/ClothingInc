@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ClothingInc/static/css/main.b01c4133.css",
-    "main.js": "/ClothingInc/static/js/main.83b830b6.js",
+    "main.js": "/ClothingInc/static/js/main.92c6c7d1.js",
     "static/media/meals.jpg": "/ClothingInc/static/media/meals.0425e23f7a1cb96f1f85.jpg",
     "index.html": "/ClothingInc/index.html",
     "main.b01c4133.css.map": "/ClothingInc/static/css/main.b01c4133.css.map",
-    "main.83b830b6.js.map": "/ClothingInc/static/js/main.83b830b6.js.map"
+    "main.92c6c7d1.js.map": "/ClothingInc/static/js/main.92c6c7d1.js.map"
   },
   "entrypoints": [
     "static/css/main.b01c4133.css",
-    "static/js/main.83b830b6.js"
+    "static/js/main.92c6c7d1.js"
   ]
 }
