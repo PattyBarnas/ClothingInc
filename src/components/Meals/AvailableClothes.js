@@ -5,54 +5,77 @@ import { useEffect, useState } from "react";
 
 const AvailableClothes = () => {
   const [clothes, setClothes] = useState([
-    { id: "m1", name: "Food", description: "A lot of food", price: 1.99 },
+    {
+      id: 1,
+      name: "Nike Long sleeve shirt",
+      description: "Size Large 100% cotton",
+      price: 29.99,
+    },
+    {
+      id: 2,
+      name: "Calvin klein Jeans",
+      description: "Size: 32x32 made from polyester",
+      price: 59.99,
+    },
+    {
+      id: 3,
+      name: "Nike SB shoes",
+      description: "Size 10.5, Ishod Wair model",
+      price: 89.99,
+    },
+    {
+      id: 4,
+      name: "Nike Hoodie",
+      description: "Size Large, made with 50% polyester and 50% twill",
+      price: 39.99,
+    },
   ]);
 
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
 
-  useEffect(() => {
-    const fetchClothes = async () => {
-      setIsLoading(true);
-      const response = await fetch("http://localhost:3000/clothes");
+  // useEffect(() => {
+  //   const fetchClothes = async () => {
+  //     setIsLoading(true);
+  //     const response = await fetch("http://localhost:3000/clothes");
 
-      if (!response.ok) throw new Error("something went wrong!");
+  //     if (!response.ok) throw new Error("something went wrong!");
 
-      const responseData = await response.json();
+  //     const responseData = await response.json();
 
-      //returns Object
-      console.log(responseData);
-      const loadedClothes = [];
-      // Want an array instead of objects so we
+  //     //returns Object
+  //     console.log(responseData);
+  //     const loadedClothes = [];
+  //     // Want an array instead of objects so we
 
-      for (const key in responseData) {
-        loadedClothes.push({
-          //have to use responseData.key[].Name <--- Name capitalized in database
-          id: key,
-          name: responseData[key].name,
-          description: responseData[key].description,
-          price: responseData[key].price,
-        });
-        console.log(loadedClothes);
-      }
+  //     for (const key in responseData) {
+  //       loadedClothes.push({
+  //         //have to use responseData.key[].Name <--- Name capitalized in database
+  //         id: key,
+  //         name: responseData[key].name,
+  //         description: responseData[key].description,
+  //         price: responseData[key].price,
+  //       });
+  //       console.log(loadedClothes);
+  //     }
 
-      setClothes(loadedClothes);
-      setIsLoading(false);
-    };
+  //     setClothes(loadedClothes);
+  //     setIsLoading(false);
+  //   };
 
-    fetchClothes().catch((error) => {
-      setIsLoading(false);
-      setError(error.message);
-    });
-  }, []);
+  //   fetchClothes().catch((error) => {
+  //     setIsLoading(false);
+  //     setError(error.message);
+  //   });
+  // }, []);
 
-  if (isLoading) {
-    return (
-      <section className={classes.MealsLoading}>
-        <p>We are fetching your data!</p>
-      </section>
-    );
-  }
+  // if (isLoading) {
+  //   return (
+  //     <section className={classes.MealsLoading}>
+  //       <p>We are fetching your data!</p>
+  //     </section>
+  //   );
+  // }
 
   if (error) {
     return (
